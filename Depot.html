@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bootstrap-Basis-Vorlage</title>
+          <!-- jQuery (wird für Bootstrap JavaScript-Plugins benötigt) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">   
+      </script>
+    <!-- Bootstrap -->
+    <!-- Das neueste kompilierte und minimierte CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Optionales Theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+    <!-- Das neueste kompilierte und minimierte JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="C:\Users\yanni\Desktop\Web Entwickler Kurs\4 - Jquery\jquery-3.5.1.min.js"></script>
+      
+<style>
+      
+    .container{
+        margin: auto;
+        background-color: gainsboro;
+      
+    }
+      
+      
+      </style>
+
+  </head>
+  <body>       
+    <div class="container">
+        
+<! /////////////////NAV>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Titel und Schalter werden für eine bessere mobile Ansicht zusammengefasst -->
+    <div class="navbar-header">
+      
+      <a class="navbar-brand" href="Portfolio.html">Yannik Wagner</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="Portfolio.html">Lebenslauf <span class="sr-only">(aktuell)</span></a></li>
+        <li><a href="Zeugnis.html">Zeugnis</a></li>
+        <li class="active"><a href="Depot.html">Depot</a></li>
+        <li><a href="#">Github</a></li>
+      </ul>
+     
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>   
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<! /////////////////NAV>
+        
+<script>
+window.onload = function () {
+
+var options = {
+	animationEnabled: true,
+	title: {
+		text: "Trade Republic Depot"
+	},
+	data: [{
+		type: "doughnut",
+		innerRadius: "50%",
+		showInLegend: false,
+		legendText: "{label}",
+		indexLabel: "{label}: #percent%",
+		dataPoints: [
+			{ label: "Apple", y: 718.64 },
+			{ label: "AT&T", y: 436.14 },
+			{ label: "Disney", y: 423.12 },
+			{ label: "Nel ASA", y: 355.80 },
+			{ label: "JPMorgan", y: 320.40 }
+		]
+	}]
+};
+$("#chartContainer").CanvasJSChart(options);
+
+}
+</script>
+        
+        <div id="chartContainer" style="margin-top: 100px; height: 500px; width: 100%;"></div>
+        <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+        <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+      </div>
+
+    
+
+   
+  </body>
+</html>
